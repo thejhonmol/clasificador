@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+data/
+outputs/
+*.bz2
+*.zip
+*.joblib
+kaggle.json
+.env
