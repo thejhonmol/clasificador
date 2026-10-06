@@ -1,0 +1,103 @@
+{
+  "created_utc": "2026-10-06T00:26:03.300794+00:00",
+  "source_url": "https://www.kaggle.com/datasets/bittlingmayer/amazonreviews",
+  "data_kind": "amazon",
+  "config": {
+    "train": "data/train.ft.txt.bz2",
+    "test": "data/test.ft.txt.bz2",
+    "output": "outputs/amazon_20k",
+    "train_size": 20000,
+    "test_size": 5000,
+    "validation_size": 0.2,
+    "seed": 42,
+    "cv": 3,
+    "max_features": 50000,
+    "jobs": 1,
+    "data_kind": "amazon"
+  },
+  "train": {
+    "file": "train.ft.txt.bz2",
+    "sha256": "63f5ae483ee1e9788323e9e7d9361d5efeb9244db1d2377d6a69c60718aebe2a",
+    "total_rows": 3600000,
+    "source_class_counts": {
+      "1": 1800000,
+      "0": 1800000
+    },
+    "sampled_rows": 20000,
+    "eligible_rows": 3599997,
+    "skipped_empty_rows": 3,
+    "requested_rows": 20000,
+    "seed": 42,
+    "sampling": "uniform reservoir over usable rows"
+  },
+  "test": {
+    "file": "test.ft.txt.bz2",
+    "sha256": "df94edbe055f0af408c368cdfd436d293e28b550f0b5f49c48b51e2d3fe33a06",
+    "total_rows": 400000,
+    "source_class_counts": {
+      "1": 200000,
+      "0": 200000
+    },
+    "sampled_rows": 5000,
+    "eligible_rows": 400000,
+    "skipped_empty_rows": 0,
+    "requested_rows": 5000,
+    "seed": 43,
+    "sampling": "uniform reservoir over usable rows"
+  },
+  "train_dedup": {
+    "removed_rows": 0,
+    "conflicting_texts": 0
+  },
+  "test_dedup": {
+    "removed_rows": 0,
+    "conflicting_texts": 0
+  },
+  "test_overlap_removed": 0,
+  "sizes": {
+    "fit": 16000,
+    "validation": 4000,
+    "final_train": 20000,
+    "test": 5000
+  },
+  "class_counts": {
+    "fit": {
+      "1": 7990,
+      "0": 8010
+    },
+    "validation": {
+      "1": 1998,
+      "0": 2002
+    },
+    "test": {
+      "1": 2521,
+      "0": 2479
+    }
+  },
+  "selected_model": "linear_svm",
+  "versions": {
+    "python": "3.12.14",
+    "sklearn": "1.8.0",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "joblib": "1.5.3",
+    "matplotlib": "3.10.8"
+  },
+  "command": [
+    "/workspace/scratch/a2f370bab3ee/clasificador/clasificador/train.py",
+    "--train",
+    "data/train.ft.txt.bz2",
+    "--test",
+    "data/test.ft.txt.bz2",
+    "--output",
+    "outputs/amazon_20k",
+    "--train-size",
+    "20000",
+    "--test-size",
+    "5000",
+    "--seed",
+    "42",
+    "--jobs",
+    "1"
+  ]
+}

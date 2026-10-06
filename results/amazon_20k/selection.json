@@ -1,0 +1,42 @@
+{
+  "selected_model": "linear_svm",
+  "criterion": "validation f1_macro",
+  "models": [
+    {
+      "model": "naive_bayes",
+      "cv_f1_macro": 0.8782939622485936,
+      "accuracy": 0.88275,
+      "precision_macro": 0.8827734053785385,
+      "recall_macro": 0.8827461327461328,
+      "f1_macro": 0.8827473544871856,
+      "best_params": {
+        "model__alpha": 0.5
+      },
+      "search_seconds": 16.120803654999918
+    },
+    {
+      "model": "logistic_regression",
+      "cv_f1_macro": 0.891927772250618,
+      "accuracy": 0.89475,
+      "precision_macro": 0.8947501381878109,
+      "recall_macro": 0.8947496447496448,
+      "f1_macro": 0.8947498355466181,
+      "best_params": {
+        "model__C": 2.0
+      },
+      "search_seconds": 17.797142338999947
+    },
+    {
+      "model": "linear_svm",
+      "cv_f1_macro": 0.8946805768376137,
+      "accuracy": 0.90125,
+      "precision_macro": 0.9012531653512755,
+      "recall_macro": 0.9012486512486513,
+      "f1_macro": 0.9012495000755941,
+      "best_params": {
+        "model__C": 0.5
+      },
+      "search_seconds": 16.189540665999857
+    }
+  ]
+}
